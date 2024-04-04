@@ -7,4 +7,9 @@
       - name: i want to install apache2
         apt:
             name: apache2
-            state: present
+            state: present 
+
+      - name: i want to replace apache2 template with my jinja template 2
+        template:
+            src: index.j2
+            des: /var/www/html/index.html
