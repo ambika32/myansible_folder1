@@ -10,7 +10,7 @@
         debug:
             msg: "{{myvar2}}"
 
-      - name: i want to install git tree and apacge2
+      - name: i want to install git, tree and apache2
         apt:
            name: "{{item}}"
            state: present
