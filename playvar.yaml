@@ -10,4 +10,11 @@
         debug:
             msg: "{{myvar1}}"
 
+      - name: i want to install git tree and apacge2
+        apt:
+           name: 
+           state: present
+        loop:
+        
+
             
