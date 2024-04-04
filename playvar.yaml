@@ -8,7 +8,7 @@
   tasks:
       - name: i want to display variable value
         debug:
-            msg: "{{myvar1}}"
+            msg: "{{myvar2}}"
 
       - name: i want to install git tree and apacge2
         apt:
