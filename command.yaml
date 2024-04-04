@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: i want to run linux command on node
+      command: hostname -f
+      regidter: myresult
+
+    - name: i want to diplay linux command output
+      debug:
+      msg:  "{{myresult}}"
