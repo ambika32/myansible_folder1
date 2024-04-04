@@ -9,7 +9,7 @@
             name: apache2
             state: present 
 
-      - name: i want to replace apache2 template with my jinja template 2
+     - name: i want to replace apache2 template with my jinja template
         template:
             src: index.j2
-            des: /var/www/html/index.html
+            dest: /var/www/html/index.html
