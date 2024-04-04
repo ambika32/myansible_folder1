@@ -12,7 +12,7 @@
 
       - name: i want to install git tree and apacge2
         apt:
-           name: 
+           name: "{{item}}"
            state: present
         loop:
         - "{{myvar1}}"
