@@ -1,4 +1,16 @@
 ---
 # tasks file for mywebrole
+          - name: i want  to install apache2 in ubuntu ansible node 111
+            apt:
+                  name: "appache2"
+                  state: present
+            when: ansible_os_family == "Debian"
+
+          - name: i want to install httpd in redhat ansible node
+            yum: 
+                  name: htttpd 
+                  state: present
+            when: ansible_os_family == "RedHat"
+
 
 
